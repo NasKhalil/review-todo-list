@@ -22,7 +22,7 @@ class TodoList {
       <div class='todo-item'>
         <div class='left-items'>
           <input id='boxes' type="checkbox" ${item.completed ? 'checked' : ''} data-index=${item.index}>
-          <p class='description' contenteditable=${!item.completed} data-index=${item.index}>${item.description}</p>
+          <p id='description' class='${item.completed ? 'checked-item' : ''}' contenteditable=${!item.completed} data-index=${item.index}>${item.description}</p>
         </div>
         <button class='remove-btn'data-index=${item.index}>del</button>
       </div>
@@ -33,6 +33,7 @@ class TodoList {
     document.querySelectorAll('#boxes').forEach((item) => {
       item.addEventListener('change', () => {
         checkBoxEvent(item);
+        this.displayTodo();
       });
     });
 
@@ -43,7 +44,7 @@ class TodoList {
       });
     });
 
-    document.querySelectorAll('.description').forEach((item) => {
+    document.querySelectorAll('#description').forEach((item) => {
       item.addEventListener('input', (e) => {
         updateTodo(e);
       });
