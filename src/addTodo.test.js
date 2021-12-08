@@ -1,4 +1,4 @@
-import addTodo from '../addTodo'
+import addTodo from './addTodo'
 
 describe('test add function', () => {
   const arr = [];
