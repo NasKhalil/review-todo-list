@@ -1,4 +1,4 @@
-import localStorageMock from './__mocks__/localStorageMock.js';
+import localStorageMock from "./__mocks__/localStorageMock.js";
 
 export default (tasks, todo) => {
   tasks.push({
@@ -7,5 +7,5 @@ export default (tasks, todo) => {
     completed: false,
   });
   // localStorage.setItem('todoList', JSON.stringify(tasks));
-  localStorageMock.setItem('todoList',JSON.stringify(tasks));
+  localStorageMock.setItem("todoList", JSON.stringify(tasks));
 };
