@@ -7,6 +7,5 @@ export default (tasks, todo) => {
     completed: false,
   });
   // localStorage.setItem('todoList', JSON.stringify(tasks));
-  const storage = new localStorageMock;
-  storage.setItem('todoList',JSON.stringify(tasks));
+  localStorageMock.setItem('todoList',JSON.stringify(tasks));
 };

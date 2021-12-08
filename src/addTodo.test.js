@@ -12,7 +12,15 @@ describe("test add function", () => {
   });
 
   test("deleteTodo", () => {
-    deleteTodo(1);
+    //  document.body.innerHTML =
+    //   `<div class='todo-item'>
+    //     <div class='left-items'>
+    //       <input id='boxes' type="checkbox" checked} data-index="1">
+    //     </div>
+    //     <button class='remove-btn'data-index="1">del</button>
+    //   </div>`;
+      // const delBtn = document.querySelector('.remove-btn');  
+    deleteTodo(arr);
     expect(arr).toHaveLength(0)
   });
 });
