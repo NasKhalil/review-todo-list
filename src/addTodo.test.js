@@ -2,8 +2,9 @@ import addTodo from "./addTodo";
 import deleteTodo from "./deleteTodo";
 
 describe("test add function", () => {
-  const arr = [];
+  let arr = [];
   const todoStr = "test";
+  const todoStr2 = "test 2";
   // addTodo test
   test("addTodo", () => {
     addTodo(arr, todoStr);
@@ -12,15 +13,8 @@ describe("test add function", () => {
   });
 
   test("deleteTodo", () => {
-    //  document.body.innerHTML =
-    //   `<div class='todo-item'>
-    //     <div class='left-items'>
-    //       <input id='boxes' type="checkbox" checked} data-index="1">
-    //     </div>
-    //     <button class='remove-btn'data-index="1">del</button>
-    //   </div>`;
-      // const delBtn = document.querySelector('.remove-btn');  
-    deleteTodo(arr);
+    const todo = arr[0]
+    arr = deleteTodo(todo, arr);
     expect(arr).toHaveLength(0)
   });
 });
