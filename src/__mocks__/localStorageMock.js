@@ -1,12 +1,8 @@
-
-class localStorageMock {
-    constructor() {
-        this.storage = {};
-    }
-    
-    setItem(key, object) {
-        this.storage[key] = object;
-    }
+const localStorageMock = {
+    storage: [],
+    setItem:(key, object) {
+        storage [key] = object
+    },
     getItem(key) {
         return this.storage[key];
     }

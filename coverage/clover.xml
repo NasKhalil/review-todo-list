@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1638974834302" clover="3.2.0">
-  <project timestamp="1638974834302" name="All files">
-    <metrics statements="7" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2" elements="10" coveredelements="6" complexity="0" loc="7" ncloc="7" packages="1" files="2" classes="2"/>
-    <file name="addTodo.js" path="C:\Users\Amkam\Documents\Amkam WebAvenger\Dev\Amkam\Microverse\Course Prograam\Module 2\week-3\pair-programming\review-todo-list\src\addTodo.js">
+<coverage generated="1638976527780" clover="3.2.0">
+  <project timestamp="1638976527781" name="All files">
+    <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2" elements="10" coveredelements="7" complexity="0" loc="7" ncloc="7" packages="1" files="2" classes="2"/>
+    <file name="addTodo.js" path="C:\Users\MAROUEN\Desktop\Microverse\Module 2\review-todo-list\src\addTodo.js">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="4" count="1" type="stmt"/>
       <line num="10" count="1" type="stmt"/>
       <line num="11" count="1" type="stmt"/>
     </file>
-    <file name="deleteTodo.js" path="C:\Users\Amkam\Documents\Amkam WebAvenger\Dev\Amkam\Microverse\Course Prograam\Module 2\week-3\pair-programming\review-todo-list\src\deleteTodo.js">
-      <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-      <line num="7" count="1" type="stmt"/>
+    <file name="deleteTodo.js" path="C:\Users\MAROUEN\Desktop\Microverse\Module 2\review-todo-list\src\deleteTodo.js">
+      <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
       <line num="9" count="0" type="stmt"/>
-      <line num="10" count="0" type="stmt"/>
-      <line num="13" count="0" type="stmt"/>
+      <line num="16" count="0" type="stmt"/>
     </file>
   </project>
 </coverage>
