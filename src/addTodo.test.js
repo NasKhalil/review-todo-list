@@ -1,17 +1,17 @@
-import addTodo from "./addTodo.js";
-import deleteTodo from "./deleteTodo.js";
+import addTodo from './addTodo.js';
+import deleteTodo from './deleteTodo.js';
 
-describe("test add function", () => {
+describe('test add function', () => {
   let arr = [];
-  const todoStr = "test";
+  const todoStr = 'test';
   // addTodo test
-  test("addTodo", () => {
+  test('addTodo', () => {
     addTodo(arr, todoStr);
     expect(arr).toHaveLength(1);
-    expect(arr[0].description).toBe("test");
+    expect(arr[0].description).toBe('test');
   });
 
-  test("deleteTodo", () => {
+  test('deleteTodo', () => {
     const todo = arr[0];
     arr = deleteTodo(todo, arr);
     expect(arr).toHaveLength(0);
