@@ -1,11 +1,12 @@
-import addTodo from './addTodo'
+import addTodo from "./addTodo";
 
-describe('test add function', () => {
+describe("test add function", () => {
   const arr = [];
-  const todoStr = 'test';
-  test('addTodo', () => {
-    addTodo(arr, todoStr)
+  const todoStr = "test";
+  // addTodo test
+  test("addTodo", () => {
+    addTodo(arr, todoStr);
     expect(arr).toHaveLength(1);
-    expect(arr[0].description).toBe('test');
-  })
-})
+    expect(arr[0].description).toBe("test");
+  });
+});
