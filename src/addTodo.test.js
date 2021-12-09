@@ -1,6 +1,7 @@
 import addTodo from './addTodo.js';
 import deleteTodo from './deleteTodo.js';
 import updateTodo from './updateTodo.js';
+import checkBoxEvent from './checkBoxEvent.js';
 
 describe('test add function', () => {
   let arr = [];
@@ -17,9 +18,15 @@ describe('test add function', () => {
     arr = deleteTodo(todo, arr);
     expect(arr).toHaveLength(0);
   });
-    test(' updateTodo', () => {
+
+  test(' updateTodo', () => {
     arr.push({completed:false,description:'hello world',index:1});
     updateTodo(1,arr,'hey')
     expect(arr[0].description).toBe('hey');
   });
+
+  test('update completed status', () => {
+    checkBoxEvent(arr);
+    expect(arr[0].completed).toBe(true);
+  })
 });
