@@ -1,5 +1,6 @@
 import addTodo from './addTodo.js';
 import deleteTodo from './deleteTodo.js';
+import updateTodo from './updateTodo.js';
 
 describe('test add function', () => {
   let arr = [];
@@ -15,5 +16,10 @@ describe('test add function', () => {
     const todo = arr[0];
     arr = deleteTodo(todo, arr);
     expect(arr).toHaveLength(0);
+  });
+    test(' updateTodo', () => {
+    arr.push({completed:false,description:'hello world',index:1});
+    updateTodo(1,arr,'hey')
+    expect(arr[0].description).toBe('hey');
   });
 });
