@@ -2,7 +2,7 @@ import addTodo from './addTodo.js';
 import deleteTodo from './deleteTodo.js';
 import updateTodo from './updateTodo.js';
 import checkBoxEvent from './checkBoxEvent.js';
-import clearAllCompleted from './clearAllCompleted.js'
+import clearAllCompleted from './clearAllCompleted.js';
 
 describe('test add function', () => {
   let arr = [];

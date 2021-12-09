@@ -1,4 +1,4 @@
-import localStorageMock from "./__mocks__/localStorageMock";
+import localStorageMock from './__mocks__/localStorageMock.js';
 
 export default (arr) => {
   // let data = JSON.parse(localStorage.getItem('todoList'));
