@@ -21,7 +21,7 @@ describe('test add function', () => {
   });
   // updateTodo test
   test(' updateTodo', () => {
-    arr.push({ completed:false, description:'hello world', index:1 });
+    arr.push({ completed: false, description: 'hello world', index: 1 });
     updateTodo(1, arr, 'hey');
     expect(arr[0].description).toBe('hey');
   });
