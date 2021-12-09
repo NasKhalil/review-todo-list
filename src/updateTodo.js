@@ -1,8 +1,7 @@
-export default (e) => {
-  const id = Number(e.target.getAttribute('data-index'));
-  const data = JSON.parse(localStorage.getItem('todoList'));
-  const todoObj = data.find((x) => x.index === id);
+import localStorageMock from './__mocks__/localStorageMock.js';
 
-  todoObj.description = e.target.textContent;
-  localStorage.setItem('todoList', JSON.stringify(data));
+export default (id, arr, str) => {
+  const todoObj = arr.find((x) => x.index === id);
+  todoObj.description = str;
+  localStorageMock.setItem('todoList', JSON.stringify(todoObj));
 };
