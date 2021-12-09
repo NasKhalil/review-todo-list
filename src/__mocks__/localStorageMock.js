@@ -1,4 +1,4 @@
-const localStorageMock = {
+const localStorage = {
   storage: {},
   setItem(key, object) {
     this.storage[key] = object;
@@ -8,4 +8,4 @@ const localStorageMock = {
   },
 };
 
-export default localStorageMock;
+export default localStorage;
